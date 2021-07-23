@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Button } from 'react-bootstrap';
 
 export default function Inventory() {
 
@@ -26,17 +27,20 @@ export default function Inventory() {
 
     return (
         <>
-            <h1>Products</h1>
-            <div className="img-card m-3">
+            <div className="img-container mt-3">
                 {isLoading ? <img src="../loader.gif" alt="loading gif" /> : 
                 inventory?.inventory.map(product =>
-                <> 
-                <h3>{product.item}</h3>
-                <img src={product.image} alt={product.item} />
-                <p>{product.price}</p>
-                <p>{product.description}</p>
-                <button className="btn btn-dark">Add to Cart</button>
-                </>
+                <div className="img-card">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={product.image} alt={product.item} />
+                        <Card.Body className="card-body" >
+                            <Card.Title>{product.item}</Card.Title>
+                            <Card.Title>${product.price}</Card.Title>
+                            <Card.Text>{product.description}.</Card.Text>
+                            <Button className="product-button" variant="dark">Add to Cart</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
                 )}
             </div>
         </>

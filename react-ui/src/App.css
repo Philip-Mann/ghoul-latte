@@ -38,10 +38,28 @@ a {
   color: white;
 }
 
-.gl {
-  color: white;
+.img-container {
+  /* margin-bottom: 2rem; */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img-card {
+  margin-bottom: 2rem;
+  /* border: 1px solid blue; */
+  width: fit-content;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  justify-content: space-between;
 }
 
 .img-card img {
-  width: 18rem;
+  height: 18rem;
 }
+
