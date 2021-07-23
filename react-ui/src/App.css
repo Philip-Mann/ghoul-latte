@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  height: 3rem;
+  color: white;
+  text-align: center;background: rgba(206, 160, 0, .1);
+  background: rgba(206, 160, 0, 1);
+}
+
+.footer p { 
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  color: white;
+  text-decoration: none;
+}
+
+a { 
+  color: inherit; 
+} 
+
+.nav {
+  height: 3em;
+  background: rgba(206, 160, 0, 1);
+}
+
+.nav a {
+  color: white;
+}
+
+.gl {
+  color: white;
+}
+
+.img-card img {
+  width: 18rem;
+}
