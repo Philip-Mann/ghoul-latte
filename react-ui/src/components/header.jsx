@@ -12,7 +12,7 @@ export default function Header() {
     <Navbar className="nav-container nav"  variant="dark">
       <Container>
         <Nav className="mr-auto">
-            <Nav.Link as="span" href="/">
+            <Nav.Link as="span" href="/landing">
               <Link to="/landing">Ghoul Latte</Link>
             </Nav.Link>
             <Nav.Link as="span" href="/products">
