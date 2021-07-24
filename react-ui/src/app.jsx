@@ -36,8 +36,8 @@ function App() {
             <Cart />  
           </Route>
         </Switch>
+      <Landing />
       </Router>
-      {/* <Landing /> */}
       <Footer />
     </div>
   );
