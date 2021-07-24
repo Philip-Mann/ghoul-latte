@@ -1,43 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './components/header';
-import Products from './components/products';
-import Financing from './components/financing';
-import Footer from './components/footer';
-import Landing from './components/landing'
-import Cart from './components/cart';
-
-import { 
-  BrowserRouter as Router,
-  // Link,
-  Route,
-  Switch,
-  // Redirect
- } from 'react-router-dom';
-
-
+import Header from './sectioning/header/header';
+import Footer from './sectioning/footer/footer';
+import Main from './sectioning/main/main'
 
 function App() {
   return (
     <div>
-      <Router>
       <Header />
-        <Switch>
-          <Route path="/landing">
-            <Landing />
-          </Route>
-          <Route path="/products">
-            <Products />
-          </Route>
-          <Route path="/financing">
-            <Financing />
-          </Route>
-          <Route path="/cart">
-            <Cart />  
-          </Route>
-        </Switch>
-      <Landing />
-      </Router>
+      <Main />
       <Footer />
     </div>
   );

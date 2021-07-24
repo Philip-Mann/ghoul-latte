@@ -7,18 +7,17 @@
 }
 
 .footer {
-  height: 3rem;
-  color: black;
-  text-align: center;
-  background: transparent;
   background: #917898;
+  color: black;
+  height: 3rem;
+  text-align: center;
 }
 
 .footer p { 
+  align-items: center;
   display: flex;
   height: 3rem;
   justify-content: center;
-  align-items: center;
 }
 
 .nav-container {
@@ -31,10 +30,9 @@ a {
 } 
 
 .nav {
-  height: 3em;
   background: transparent;
   background-color: #917898;
-  /* border: 1px solid blue; */
+  height: 3em;
 }
 
 .nav a {
@@ -42,16 +40,14 @@ a {
 }
 
 .img-container {
-  /* margin-bottom: 2rem; */
-  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .img-card {
   margin-bottom: 2rem;
-  /* border: 1px solid blue; */
   width: fit-content;
 }
 

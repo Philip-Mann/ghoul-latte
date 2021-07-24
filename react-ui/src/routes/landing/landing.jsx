@@ -1,9 +1,12 @@
 import React from 'react';
+import NameForm from '../../components/nameForm'
+import Greeting from '../../components/greeting'
 
 export default function Landing() {
 
     return (
         <div className="gl landing-container d-flex mt-3 justify-content-center">
+            <Greeting />
             <div className="landing-img">
                 <img src="https://i.ibb.co/YR6x638/IMG-4656.jpg" alt="cat" />
             </div>
@@ -27,6 +30,9 @@ export default function Landing() {
                     or thinking longingly about tuna brine. Kitty 
                     friends are not food so attack feet.
                 </p>
+            </div>
+            <div className="name-input">
+                <NameForm />
             </div>
         </div>
     );

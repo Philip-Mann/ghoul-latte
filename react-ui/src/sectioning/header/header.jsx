@@ -14,7 +14,7 @@ export default function Header() {
       <Container>
         <Nav className="mr-auto">
             <Nav.Link as="span" href="/landing">
-              <Link to="/landing">Ghoul Latte</Link>
+              <Link to="/">Ghoul Latte</Link>
             </Nav.Link>
             <Nav.Link as="span" href="/products">
               <Link to="/products">Products</Link>

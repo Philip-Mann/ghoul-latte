@@ -15,7 +15,7 @@ export default function Inventory() {
             .then((inventory) => {
                 setInventory(inventory);
                 setIsLoading(false);
-                console.log(inventory)
+                // console.log(inventory)
             });
     }
 
