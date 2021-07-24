@@ -8,9 +8,10 @@
 
 .footer {
   height: 3rem;
-  color: white;
-  text-align: center;background: rgba(206, 160, 0, .1);
-  background: rgba(206, 160, 0, 1);
+  color: black;
+  text-align: center;
+  background: transparent;
+  background: #917898;
 }
 
 .footer p { 
@@ -31,11 +32,13 @@ a {
 
 .nav {
   height: 3em;
-  background: rgba(206, 160, 0, 1);
+  background: transparent;
+  background-color: #917898;
+  /* border: 1px solid blue; */
 }
 
 .nav a {
-  color: white;
+  color: black;
 }
 
 .img-container {
@@ -57,9 +60,13 @@ a {
   flex-direction: column;
   height: 14rem;
   justify-content: space-between;
+  background-color: #bcb8ce;
 }
 
 .img-card img {
   height: 18rem;
 }
 
+body {
+  background-color: #d5ddef;
+}

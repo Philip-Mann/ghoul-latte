@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+// import logo from '../logo.svg'
 
 import { Link } from 'react-router-dom'
 
@@ -9,7 +10,7 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <>
-    <Navbar className="nav-container nav"  variant="dark">
+    <Navbar className="nav-container nav">
       <Container>
         <Nav className="mr-auto">
             <Nav.Link as="span" href="/landing">

@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/header';
 import Products from './components/products';
 import Financing from './components/financing';
-// import About from './components/about';
 import Footer from './components/footer';
 import Landing from './components/landing'
 import Cart from './components/cart';
@@ -35,11 +34,10 @@ function App() {
           </Route>
           <Route path="/cart">
             <Cart />  
-            {/* <About /> */}
           </Route>
         </Switch>
       </Router>
-      <Landing />
+      {/* <Landing /> */}
       <Footer />
     </div>
   );
