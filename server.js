@@ -15,6 +15,8 @@ app.get('/api', (req, res) => {
     res.json(inventory)
 });
 
+
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });

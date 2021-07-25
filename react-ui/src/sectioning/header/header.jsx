@@ -19,8 +19,8 @@ export default function Header() {
             <Nav.Link as="span" href="/products">
               <Link to="/products">Products</Link>
             </Nav.Link>
-            <Nav.Link as="span" href="/financing">
-              <Link to="/financing">Financing</Link>
+            <Nav.Link as="span" href="/about">
+              <Link to="/about">About</Link>
             </Nav.Link>
             <Nav.Link as="span" href="/cart">
               <Link to="/cart">Cart</Link>
