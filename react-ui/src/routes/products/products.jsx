@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container'
+import Search from '../../components/search'
 
 export default function Inventory() {
 
@@ -15,7 +17,7 @@ export default function Inventory() {
             .then((inventory) => {
                 setInventory(inventory);
                 setIsLoading(false);
-                // console.log(inventory)
+                // console.log(inventory);
             });
     }
 
@@ -27,10 +29,12 @@ export default function Inventory() {
 
     return (
         <>
+        <Container>
+            <Search />
             <div className="img-container mt-3">
                 {isLoading ? <img src="../loader.gif" alt="loading gif" /> : 
                 inventory?.inventory.map(product =>
-                <div className="img-card">
+                    <div className="img-card" key={product.id} >
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={product.image} alt={product.item} />
                         <Card.Body className="card-body" >
@@ -43,6 +47,7 @@ export default function Inventory() {
                 </div>
                 )}
             </div>
+        </Container>
         </>
     );
 }

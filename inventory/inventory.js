@@ -96,7 +96,7 @@ module.exports = {
             "item_type": "Earrings",
             "price": "15.00",
             "quantity": "3",
-            "id": "009",
+            "id": "010",
             "image": "https://i.ibb.co/R9yVRp3/IMG-4648.jpg",
             "description": "Moon Earrings",
             "size": "" 
