@@ -2,7 +2,7 @@ module.exports = {
     
     "inventory": [
         {
-            "item": "What's your favorite scary movie?",
+            "item": "Bloody Scream",
             "item_type": "Earrings",
             "price": "15.00",
             "quantity": "3",
@@ -100,7 +100,38 @@ module.exports = {
             "image": "https://i.ibb.co/R9yVRp3/IMG-4648.jpg",
             "description": "Moon Earrings",
             "size": "" 
-        }
+        },
+        {
+            "item": "Sweet Tart Hearts",
+            "item_type": "Earrings",
+            "price": "15.00",
+            "quantity": "2",
+            "id": "011",
+            "image": "https://i.ibb.co/7kpYTD1/IMG-4689.jpg",
+            "description": "Yellow and Pink Heart Errings",
+            "size": "" 
+        },
+        {
+            "item": "Ghost Latte",
+            "item_type": "Painting",
+            "price": "50.00",
+            "quantity": "1",
+            "id": "012",
+            "image": "https://i.ibb.co/c37ZMqn/IMG-4690.jpg",
+            "description": "Ghost Latte Painting on Canvas",
+            "size": "12' x 12'" 
+        },
+        {
+            "item": "Scorpio Season",
+            "item_type": "Painting",
+            "price": "50.00",
+            "quantity": "1",
+            "id": "013",
+            "image": "https://i.ibb.co/QfXtGwG/IMG-4691.jpg",
+            "description": "Scorpio Season Painting on Canvas",
+            "size": "12' x 12'" 
+        },
+
     ]
 }
 

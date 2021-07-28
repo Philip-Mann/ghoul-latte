@@ -1,5 +1,6 @@
 import {
-    GET_USERNAME
+    GET_USERNAME, 
+    SEARCH_PRODUCTS
 } from './actionTypes';
 // import userName from './reducers/userName';
 
@@ -12,3 +13,12 @@ export const updateUserName = userName => {
         }
     }
 };
+
+export const filterProducts = search => {
+    return {
+        type: SEARCH_PRODUCTS,
+        payload: {
+            search
+        }
+    }
+}
