@@ -1,19 +1,13 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import  Button from 'react-bootstrap/Button'
-import { updateUserName } from '../redux/actions';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye } from '@fortawesome/free-solid-svg-icons'
-const eye = <FontAwesomeIcon icon={faEye} />;
-
+import { updateUserName } from '../../redux/actions';
 
 
 // variable that exist on an object called props { destructured }
 const UserNameForm = ({ updateUserName, userName }) => {
 
     const [name, setName] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
 
     const handleChange = evt => {
         const userName = evt.target.value;
@@ -23,10 +17,6 @@ const UserNameForm = ({ updateUserName, userName }) => {
     const handleSubmit = () => {
         updateUserName(name);
         setName('');
-    }
-
-    const toggleShowPassword = () => {
-        setShowPassword(showPassword ? false : true);
     }
 
     return (
@@ -39,15 +29,8 @@ const UserNameForm = ({ updateUserName, userName }) => {
                     placeholder="Email" 
                     value={name} 
                 />
-                <div className="password-container">
-                    <input 
-                        className="password-input"
-                        type={showPassword ? "text" : "password"}
-                        placeholder="Password"
-                    />
-                    <i onClick={toggleShowPassword} >{eye}</i>
-                </div>
-                <Button 
+                <Button
+                    className="mt-3"
                     variant="dark"
                     type="submit"
                     size="sm"

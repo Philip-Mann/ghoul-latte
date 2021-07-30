@@ -7,13 +7,13 @@ const { PORT } = process.env
 
 const app = express();
 
+app.get('/api', (req, res) => {
+    res.json(inventory)
+});
 // Serving up the static build file for React
 app.use(express.static(path.resolve(__dirname + '/react-ui/build')));
 
 // Sending my inventory.js to React to map and render
-app.get('/api', (req, res) => {
-    res.json(inventory)
-});
 
 
 
