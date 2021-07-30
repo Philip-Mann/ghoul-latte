@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 .footer {
   background: #917898;
   color: black;
@@ -67,18 +71,7 @@ body {
   background-color: #d5ddef;
 }
 
-.landing-container {
-  /* height: 40rem; */
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 3rem;
-}
-
 .landing-text {
-  /* border: 1px solid blue; */
   text-align: left;
   text-decoration: wavy;
   margin: 1rem;
@@ -90,50 +83,16 @@ body {
   border-radius: 50%;
 }
 
-.form-container {
-  display: flex;
-  height: 8rem;
-  justify-content: center;
-  margin: 3rem;
-}
-
-.form-card {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: space-between;
-}
-
 .email-input {
-  font-size: 1.5rem;
-  border-top-style: none;
+  background: transparent;
   border-left-style: none;
   border-right-style: none;
+  border-top-style: none;
+  font-size: 1.5rem;
   outline-width: 0;
   width: 18rem;
   height: 2rem;
-  background: transparent;
-}
-
-.password-input {
-  font-size: 1.5rem;
-  border-top-style: none;
-  border-left-style: none;
-  border-right-style: none;
-  outline-width: 0;
-  width: 18rem;
-  height: 2rem;
-  background: transparent;
-}
-
-.password-container {
-  position: relative;
-}
-
-.password-container i {
-  position: absolute;
-  margin-left: 10px;
+  padding-left: 1rem;
 }
 
 i:hover {
@@ -141,20 +100,27 @@ i:hover {
   cursor: pointer;
 }
 
-.search-products {
-  /* border: 1px solid blue; */
-}
-
 .search {
-  /* border: 1px solid red; */
   font-size: 1.5rem;
   height: 3rem;
   width: 22rem;
-  /* width: 100%; */
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
   outline-width: 0;
   background: transparent;
   padding-left: 4rem;
+}
+
+.discount-container {
+  width: 20rem;
+  background-image: linear-gradient(#ffa5b9, #f0d9ea);
+}
+
+.discount-card {
+  margin: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  text-align: center;
 }

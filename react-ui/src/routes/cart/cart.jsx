@@ -12,6 +12,8 @@ export default function Cart() {
     // console.log(itemsInCart);
     
     return (
-        <h1>Cart</h1>
+        <>
+            <h1>Cart</h1>
+        </>
     )
 }
