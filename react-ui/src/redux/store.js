@@ -1,13 +1,10 @@
 import { applyMiddleware, compose, createStore } from 'redux';
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query'
 import api from './services/api'
 import fetchReducer from '../redux/reducers/fetchApiSlice';
-
-
-
+import thunk from 'redux-thunk';
 import rootReducer from './reducers';
-import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
     reducer: {
