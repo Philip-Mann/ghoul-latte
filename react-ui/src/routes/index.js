@@ -1,11 +1,8 @@
 import { Route } from 'react-router-dom'
-
 import Products from './products/products';
 import Landing from './landing/landing';
 import About from './about/about';
 import Cart from './cart/cart';
-
-
 
 const Routes = () => {
 

@@ -1,56 +1,55 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import  Button from 'react-bootstrap/Button'
-import { updateUserName } from '../../redux/actions';
+import { updateEmail } from '../../redux/actions';
 
 
 // variable that exist on an object called props { destructured }
-const UserNameForm = ({ updateUserName, userName }) => {
+const Email = ({ updateEmail, email }) => {
 
-    const [name, setName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
 
-    const handleChange = evt => {
-        const userName = evt.target.value;
-        setName(userName);
+    const handleChange = e => {
+        const email = e.target.value;
+        setUserEmail(email);
     }
 
     const handleSubmit = () => {
-        updateUserName(name);
-        setName('');
+        updateEmail(userEmail);
+        setUserEmail('');
+        console.log('inside email.jsx:', userEmail)
     }
 
     return (
-        <div className="form-container d-flex">
-            <div className="form-card">
-                <input 
-                    className="email-input" 
-                    onChange={handleChange} 
-                    type="email" 
-                    placeholder="Email" 
-                    value={name} 
-                />
-                <Button
-                    className="mt-3"
-                    variant="dark"
-                    type="submit"
-                    size="sm"
-                    onClick={handleSubmit}
-                >
-                    Submit
-                </Button>
-            </div>
-        </div>
+        <>
+        <input 
+            className="email-input" 
+            onChange={handleChange}
+            type="email" 
+            placeholder="Email" 
+            value={userEmail} 
+        />
+        <Button
+            className="mt-3"
+            variant="dark"
+            type="submit"
+            size="sm"
+            onClick={handleSubmit}
+        >
+            Submit
+        </Button>
+        </>
     )
 }
 
-// READ
+// // READ
 const mapStateToProps = state => ({
-    userName: state.userName
+    user: state.email
 });
 
-// sending to the store: WRITE
+// // sends data to the reducer, reducer updates store: WRITE
 const mapDispatchToProps = dispatch => ({
-    updateUserName: userName => dispatch(updateUserName(userName))
+    updateEmail: email => dispatch(updateEmail(email))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserNameForm);
+export default connect(mapStateToProps, mapDispatchToProps)(Email);

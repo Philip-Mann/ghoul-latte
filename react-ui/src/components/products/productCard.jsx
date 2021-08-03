@@ -21,7 +21,7 @@ const ProductCard = ({ searchInventory }) => {
     return(
         <>
         <div className="product-container mt-3">
-        {productIncluded() < 1 ? <h1 className="text-center mt-3">Sorry, we're all out of stuff (❍ᴥ❍ʋ)</h1> : ''}
+        {productIncluded() < 1 ? <h2 className="text-center mt-3">Sorry, we dont have "{searchInventory}" here. (❍ᴥ❍ʋ)</h2> : ''}
         {isLoading ? <img src="../loader.gif" alt="loading gif" /> : 
         productIncluded().map(product =>
                 <div className="product-card m-3" key={product.id}>

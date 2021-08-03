@@ -1,15 +1,16 @@
-import {
-    GET_USERNAME
-} from './actionTypes';
-// import searchQuery from './reducers/searchQuery';
-// import userName from './reducers/userName';
+import { GET_EMAIL } from './actionTypes';
 
-export const updateUserName = userName => {
-    //has to return an object with a key of 'type'
-    return {
-        type: GET_USERNAME,
-        payload: {
-            userName
-        }
-    }
-};
+// export const updateEmail = email => {
+//     //has to return an object with a key of 'type'
+//     // console.log('actions.js:', email);  //Works
+//     return {
+//         type: GET_EMAIL,
+//         payload: {
+//             email
+//         }
+//     }
+// };
+
+export const updateEmail = email => {
+    return 'hello';
+}

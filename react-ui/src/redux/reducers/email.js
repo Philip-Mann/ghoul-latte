@@ -1,14 +1,64 @@
-import { GET_USERNAME } from '../actionTypes';
+/* eslint-disable eqeqeq */
+import { GET_EMAIL } from '../actionTypes';
 
 const initialState = '';
 
-export default function userName(state = initialState, action) {
-    if(action.type === GET_USERNAME) {
-        // console.log("in reducer", action.payload.userName);
-        return action.payload.userName
+export default function email(state=initialState, action) {
+    if (action.type == GET_EMAIL) {
+        return action.payload.email;
     }
     return state;
 };
+
+
+// 03:16:13 in Matts Redux Video
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //--------------------
 //  Immutable Objects
