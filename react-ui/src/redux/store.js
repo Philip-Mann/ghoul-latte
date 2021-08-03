@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { productsApi } from "./services/api";
-import { emailSlice } from './reducers/userName';
+import { emailSlice } from './slice/email';
 
 export const store = configureStore({
     reducer: {

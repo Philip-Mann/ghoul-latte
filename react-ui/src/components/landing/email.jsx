@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from 'react-redux'
 // I don't like that name but it's what the docs call it
 // It is basically a reducer tied to a specific slice of the store but it also has functions which used to be in a separate file
 // A reducer is just a function but it's special in that it's sole purpose is to update the store
-import { updateEmail } from '../../redux/reducers/userName';
+import { updateEmail } from '../../redux/slice/email';
 
 
 const UserNameForm = () => {

@@ -1,5 +1,5 @@
 import { useGetProductsQuery } from '../../redux/services/api';
-import { productData } from '../../redux/reducers/fetchApiSlice';
+import { productData } from '../../redux/slice/product';
 import { useSelector } from 'react-redux';
 import AddToCart from './addToCart'
 
