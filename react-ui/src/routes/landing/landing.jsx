@@ -6,7 +6,7 @@ export default function Landing() {
 
     return (
         <Container>
-            <div className="discount-container mt-3 d-flex justify-content-center">
+            <div className="discount-container">
                 <DiscountCard />
             </div>
         </Container>
