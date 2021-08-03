@@ -1,31 +1,16 @@
-import { GET_USERNAME } from '../actionTypes';
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = '';
 
-export default function userName(state = initialState, action) {
-    if(action.type === GET_USERNAME) {
-        // console.log("in reducer", action.payload.userName);
-        return action.payload.userName
-    }
-    return state;
-};
+export const emailSlice = createSlice({
+  name: 'email',
+  initialState,
+  reducers: {
+    updateEmail: (state, action) => action.payload
+  },
+})
 
-//--------------------
-//  Immutable Objects
-//--------------------
+// Action creators are generated for each case reducer function
+export const { updateEmail } = emailSlice.actions
 
-// user = {
-//     name: 'john',
-//     age: '29',
-//     city: 'san antonio',
-//     hobbies: ['hiking', 'biking', 'climbing']
-// }
-
-/* 
-return {
-    ...user,
-    city: action.payload.user.city
-}
-return state;
-
-*/
+export default emailSlice.reducer;
