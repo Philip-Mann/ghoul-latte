@@ -18,7 +18,6 @@ const UserNameForm = () => {
     const [name, setName] = useState('');
 
     const handleChange = evt => {
-      console.log('d')
         const userName = evt.target.value;
         setName(userName);
     }
