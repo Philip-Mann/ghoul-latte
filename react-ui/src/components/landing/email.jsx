@@ -1,11 +1,19 @@
 import { useState } from 'react';
-import { connect } from 'react-redux';
 import  Button from 'react-bootstrap/Button'
-import { updateUserName } from '../../redux/actions';
+// Every componenent that is tied to the store needs this import
+// useSelector is to read data, useDispatch is to write data
+// This is similar to what I showed to you with mapStateToProps and mapDispatchToProps
+import { useSelector, useDispatch } from 'react-redux'
+// If you are updating the store, you also need to import your slice
+// I don't like that name but it's what the docs call it
+// It is basically a reducer tied to a specific slice of the store but it also has functions which used to be in a separate file
+// A reducer is just a function but it's special in that it's sole purpose is to update the store
+import { updateEmail } from '../../redux/slice/email';
 
 
-// variable that exist on an object called props { destructured }
-const UserNameForm = ({ updateUserName, userName }) => {
+const UserNameForm = () => {
+  const email = useSelector((state) => state.email)
+  const dispatch = useDispatch();
 
     const [name, setName] = useState('');
 
@@ -15,7 +23,7 @@ const UserNameForm = ({ updateUserName, userName }) => {
     }
 
     const handleSubmit = () => {
-        updateUserName(name);
+        dispatch(updateEmail(name));
         setName('');
     }
 
@@ -43,14 +51,4 @@ const UserNameForm = ({ updateUserName, userName }) => {
     )
 }
 
-// READ
-const mapStateToProps = state => ({
-    userName: state.userName
-});
-
-// sending to the store: WRITE
-const mapDispatchToProps = dispatch => ({
-    updateUserName: userName => dispatch(updateUserName(userName))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(UserNameForm);
+export default UserNameForm;

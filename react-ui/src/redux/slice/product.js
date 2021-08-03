@@ -5,7 +5,7 @@ const initialState = {
   }
 };
 
-export const fetchApiSlice = createSlice({
+export const productSlice = createSlice({
   name: 'fetchApi',
   initialState,
   reducers: {
@@ -15,8 +15,8 @@ export const fetchApiSlice = createSlice({
   }
 });
 
-export const { getProductData } = fetchApiSlice.actions;
+export const { getProductData } = productSlice.actions;
 
 export const productData = (state) => state.fetchApi;
 
-export default fetchApiSlice.reducer;
+export default productSlice.reducer;

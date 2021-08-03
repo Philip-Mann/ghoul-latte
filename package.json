@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  },  
+  },
   "cacheDirectories": [
     "node_modules",
     "react-ui/node_modules"
