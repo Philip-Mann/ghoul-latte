@@ -8,7 +8,6 @@ const SearchProds = () => {
     const handleChange = evt => {
         evt.preventDefault();
         setSearchInventory(evt.target.value);
-        console.log(searchInventory);
     }
 
     return (
