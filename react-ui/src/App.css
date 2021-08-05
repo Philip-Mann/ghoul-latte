@@ -104,22 +104,18 @@ i:hover {
   justify-content: center;
   align-items: center;
   min-height: 532px;
-  /* border: 1px solid red; */
 }
 
 .discount-card {
-  /* border: 1px solid red; */
   width: 18rem;
   height: 15rem;
   background-image: linear-gradient(#ffa5b9, #f0d9ea);
-  /* margin: 1rem; */
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .quantity-button-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +125,6 @@ i:hover {
 
 .quantity-button-container button {
   text-transform: none;
-  /* border: none; */
 }
 
 .product-card {
@@ -148,4 +143,8 @@ i:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.cart-body {
+  margin-bottom: 50px;
 }

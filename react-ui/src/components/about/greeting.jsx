@@ -9,7 +9,6 @@ const mapStateToProps = state => ({
     userName: state.userName
 });
 
-
 // function(()()) is a closure. 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 export default connect(mapStateToProps)(Greeting);

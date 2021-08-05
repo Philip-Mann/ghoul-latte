@@ -1,13 +1,12 @@
 import { useGetProductsQuery } from '../../redux/services/api';
 import { productData } from '../../redux/slice/product';
 import { useSelector } from 'react-redux';
-import AddToCart from './addToCart'
-
-
-
+import Buttons from './buttons'
 
 const ProductCard = ({ searchInventory }) => {
-    const fetchData = useSelector(productData)
+
+    const fetchData = useSelector(productData);
+
     const { data, isLoading } = useGetProductsQuery(fetchData);
     
     const productIncluded = () => {
@@ -32,7 +31,7 @@ const ProductCard = ({ searchInventory }) => {
                         <p>{product.item}</p>
                         <p>${product.price}</p>
                     </div>
-                    <AddToCart /> 
+                    <Buttons product={product}/> 
                 </div>
         )}
         </div>
